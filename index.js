@@ -14,7 +14,7 @@ const calculateTotalMarks = ({ languages = [] }) => {
   return languages.reduce((accumulator, currentValue) => accumulator + currentValue.marks, 0);
 }
 
-const testFunction = () => false;
+const testFunction = () => true;
 
 /**
  * This function will return the student object related to the id
