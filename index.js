@@ -14,6 +14,8 @@ const calculateTotalMarks = ({ languages = [] }) => {
   return languages.reduce((accumulator, currentValue) => accumulator + currentValue.marks, 0);
 }
 
+const testFunction = () => false;
+
 /**
  * This function will return the student object related to the id
  * This method acutally a mock method for http
@@ -26,6 +28,8 @@ const getRelatedStudentById = (studentId = null) => new Promise((resolve, reject
 
 const summarizeStudentDetails = async (studentId = null) => {
   if (!studentId) console.log("Student id is not provided");
+
+  testFunction();
 
   const student = await getRelatedStudentById(studentId);
 
